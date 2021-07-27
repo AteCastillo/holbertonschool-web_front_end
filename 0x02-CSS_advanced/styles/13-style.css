@@ -26,6 +26,8 @@ html {
       --line-height-big: 1.8;
       --section-header-align: center;
       --section-tagline-transform: uppercase;
+      --section-title-margin: 0;
+      --section-title-color: var(--color-black);
 
   }
 body {
@@ -40,9 +42,20 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
 }
-a {
+a:link {
     color: var(text-color);
     text-decoration: none;
+}
+
+a:visited {
+    font-style: italic;
+}
+/* any link over which the user's pointer is hovering */
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: var(--color-light-grey);
 }
 
 .visually-hidden {
@@ -55,6 +68,14 @@ a {
 
 .section-header {
     text-align: var(--section-header-align)
+}
+
+.section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
 }
 .section-tagline {
     color: var(--color-primary);
