@@ -203,8 +203,10 @@ html {
         color: var(text-color);
     }
     .social-link {
+        /*it renders as a block element*/
         display: block;
     }
     .social-link > svg {
-        color: var(--text-color);
+        /* text color or shape color */
+        fill: var(--text-color);
     }
