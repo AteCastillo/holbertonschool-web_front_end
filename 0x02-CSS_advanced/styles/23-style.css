@@ -130,6 +130,7 @@ html {
     
     
     .navbar-menu {
+        
         float: right;
     }
     
@@ -154,7 +155,7 @@ html {
         padding: 0.5rem 1rem;
     }
     .nav .nav-link:hover {
-
+        
         color: var(--nav-item-link-hover);
     }
     
@@ -216,17 +217,4 @@ html {
         /* element that is a children of a class */
         /* text color or shape color. Fill in the color of the svg children with the text-color variable */
         fill: var(--text-color);
-    }
-    .card-services .card-title {
-        margin: 0;
-    }
-    .card-services a {
-        display: block;
-        padding: 2rem;
-        background-color: var(--color-light-grey);
-    }
-    .card-services a:hover {
-        color: var(--color-white);
-        background-color: var(--color-primary);
-        text-decoration: none;
     }
