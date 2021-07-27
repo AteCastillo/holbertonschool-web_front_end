@@ -1,5 +1,5 @@
 .box {
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 html {
     /* set the scroll behavior with a timing */
