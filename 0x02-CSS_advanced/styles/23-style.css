@@ -70,6 +70,7 @@ html {
     }
     
     a:visited {
+        /* attribute selectors */
         font-style: italic;
     }
     /* any link over which the user's pointer is hovering */
@@ -147,21 +148,25 @@ html {
         margin: var(--nav-item-margin);
     }
     .nav .nav-link {
+        /* class inside a class */
         display: block;
         /* the first element corresponds to top and bottom */
         padding: 0.5rem 1rem;
     }
     .nav .nav-link:hover {
+
         color: var(--nav-item-link-hover);
     }
     
     ul.row {
+        /* ul with class row */
         margin: 0;
         padding: 0;
         list-style: none;
     }
     
     .row::after {
+        /* pseudo elements */
         content: "";
         display: table;
         clear: both;
@@ -188,6 +193,7 @@ html {
     }
     
     .footer ul {
+        /* element inside a class */
         text-align: right;
     }
     .footer {
@@ -200,13 +206,22 @@ html {
         background-color: var(--color-black);
     }
     .footer-address {
-        color: var(text-color);
+        color: var(--text-color);
     }
     .social-link {
         /*it renders as a block element*/
         display: block;
     }
     .social-link > svg {
-        /* text color or shape color */
+        /* element that is a children of a class */
+        /* text color or shape color. Fill in the color of the svg children with the text-color variable */
         fill: var(--text-color);
+    }
+    .card-services .card-title {
+        margin: 0;
+    }
+    .card-services a {
+        display: block;
+        padding: 2rem;
+        background-color: var(--color-light-grey);
     }
