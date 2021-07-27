@@ -154,24 +154,21 @@ a:active {
     color: var(--nav-item-link-hover);
 }
 
-ul .row {
+ul.row {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .col-1-3 {
-    width: 0.3333em;
+    width: 33.33%;
     float: left;
     padding: 0.5rem;
 }
 .col-1-2 {
-    width: 0,5em;
+    width: 50%;
     float: left;
     padding: 0.5rem;
-}
-.footer {
-    padding: var(--footer-padding);
 }
 
 .footer-copyright {
@@ -182,4 +179,7 @@ ul .row {
 
 .footer ul {
     text-align: right;
+}
+.footer {
+    padding: var(--footer-padding);
 }
