@@ -193,10 +193,9 @@ html {
     .footer {
         padding: var(--footer-padding);
     }
-    [data-section-theme="dark"] {
-        /* set vales of some variables */
-        --text-color: var(--color-white);
-        --section-title-color: var(--color-white);
-        /* set the background color */
-        background-color: var(--color-black);
+    [data-section-theme='dark'] {
+        /* select an specific atribute */
+          --text-color: var(--color-white);
+          --section-title-color: var(--color-white);
+          background-color: var(--color-black);
     }
