@@ -160,8 +160,10 @@ ul.row {
     list-style: none;
 }
 
-.row {
-    
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .col-1-3 {
