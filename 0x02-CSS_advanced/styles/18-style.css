@@ -144,7 +144,7 @@ a:active {
 .nav .nav-link {
     display: block;
     /* the first element corresponds to top and bottom */
-    padding: 0.5em 1em;
+    padding: 0.5rem 1rem;
 }
 .nav .nav-link:hover {
     color: var(--nav-item-link-hover);
