@@ -342,6 +342,7 @@ html {
 
     .card-work .card-title a::after {
         position: absolute;
+        /* to the edges */
         top: 0;
         left: 0;
         right: 0;
