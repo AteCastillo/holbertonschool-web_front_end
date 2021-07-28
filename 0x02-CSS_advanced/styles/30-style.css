@@ -309,7 +309,7 @@ html {
         position: relative;
         overflow: hidden;
     }
-    .card-work .card-image {
+    .card-work .card-image img{
         height: 30rem;
         width: 100%;
         object-fit: cover;
@@ -329,7 +329,7 @@ html {
     .card-work .card-title {
         text-align: center;
         margin: 0;
-        opacity: 0.1;
+        opacity: 0;
         height: 100%;
         position: relative;
     }
@@ -344,6 +344,8 @@ html {
         position: absolute;
         top: 0;
         left: 0;
+        right: 0;
+        bottom: 0;
         content: "";
     }
 
