@@ -5,7 +5,7 @@
     You must use @for statement
 */
 @for $i from 1 through 5 {
-    h1 {
+    h#{$i} {
         font-size: ($i)px;
     }
 }
