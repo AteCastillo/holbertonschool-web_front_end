@@ -555,7 +555,7 @@
 		min-width: 20%;
 	}
     /* Post Meta ============================= */
-    .post-meta-lis {
+    .post-meta-list {
         flex-direction: column;
     }
 
@@ -570,7 +570,7 @@
     padding-bottom: 1rem;
     border-bottom: 0.2rem solid var(--color-light-grey);
     }
-    .post-meta-list [class^='post-meta'] {
+    .post-meta-list [class^='post-meta']:last-child {
         border: none;
         margin-bottom: 3rem;
     }
@@ -597,7 +597,7 @@
    }
    .post-content .img-caption {
        margin: 1rem 0;
-       padding: 0 .5rem 0;
+       padding: 0 .5rem;
        font-size: var(--font-size-small);
        color: var(--color-grey);
        text-align: center;
