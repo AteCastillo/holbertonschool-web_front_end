@@ -16,6 +16,8 @@ html, body {
     flex-basis: 4%;
     align-self: center;
     font-size: 1.3em;
+    line-height: 2.5rem;
+    text-indent: .2rem;
     
 }
 .box2 {
@@ -25,6 +27,8 @@ html, body {
     height: 50%;
     align-self: center;
     font-size: 2em;
+    line-height: 4rem;
+    text-indent: 1rem;
 }
 .box3 {
     background-color: green;
@@ -32,6 +36,8 @@ html, body {
     flex-basis: 15%;
     height: 80%;
     font-size: 4em;
+    line-height: 7rem;
+    text-indent: 1.8rem;
 
 }
 .box4 {
@@ -41,6 +47,8 @@ html, body {
     height: 50%;
     align-self: center;
     font-size: 2em;
+    line-height: 4rem;
+    text-indent: 1rem;
 }
 .box5 {
     background-color: purple;
@@ -49,4 +57,6 @@ html, body {
     height: 30%;
     align-self: center;
     font-size: 1.3em;
+    line-height: 2.5rem;
+    text-indent: .2rem;
 }
