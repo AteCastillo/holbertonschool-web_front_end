@@ -703,8 +703,7 @@
 
     input[type=text]:focus, input[type=email]:focus, textarea:focus {
         border: .1rem solid var(--color-grey);
-        background: var(--color-light-grey);
-
+       
     }
 
     ::placeholder {
