@@ -821,7 +821,7 @@ input:not(:placeholder-shown) ~ .form-field-icon::after {
       padding: 0;
   }
 
-  .form-search .search-button .search-icon {
+  .search-button .search-icon {
       fill: var(--color-white);
       width: 1.5rem;
       height: 1.5rem;
