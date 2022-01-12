@@ -232,7 +232,7 @@
   @media only screen and (max-width: 767px) {
    :root {
       --section-padding: 5rem 1.5rem;
-      --section-body-padding: 2rem 0 0;
+      --section-body-padding: rem 0 0;
     }
 
     ul.row, .row {
@@ -1054,7 +1054,20 @@
     z-index: 3;
     transition: width .4s cubic-bezier(0, 0.795, 0, 1);
   }
+  [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'holberton_school-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
   
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
   .form-search input[type="search"]:focus {
     position: relative;
     width: 15rem;
