@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="application/javascript">
+        /**
+        * @param {string} firstName
+        * @param {string} lastName
+        */
+
+        function createFamilyTree() {
+
+            $("body").append("<table>");
+            $("table").append("<thead>");
+            $("table").append("<tbody>");
+            $("thead").append("<tr>");
+            $("thead tr").append($("<th>").text("Firstname"), $("<th>").text("Lastname"));
+        }
+
+        function addNewMember(firstName, lastName) {
+           
+            $("tbody").append($("<tr>").append(`<td>${firstName}<td>${lastName}`, $("<td>(x)</td>").css("background", "orange").click(function() {
+                    $(this).closest("tr").remove() })));
+        }
+        createFamilyTree();
+        addNewMember("Guillaume", "Salva");
+        addNewMember("Arielle", "Snizt");
+        addNewMember("Fanette", "Snizt");
+        addNewMember("Gerard", "Snizt");
+        addNewMember("Victor", "Salva");
+    </script>
+
+, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="application/javascript">
+
+        function createFamilyTree() {
+
+            $("body").append("<table>");
+            $("table").append("<thead>");
+            $("table").append("<tbody>");
+            $("thead").append("<tr>");
+            $("thead tr").append($("<th>").text("Firstname"), $("<th>").text("Lastname"));
+        }
+
+        function addNewMember(firstName, lastName, position) {
+           
+            if (position === "before") {
+                $("tbody").prepend($("<tr>").append(`<td>${firstName}<td>${lastName}`, $("<td>(x)</td>").css("background", "orange").click(function() {
+                    $(this).closest("tr").remove() })));
+            }
+            else {
+                $("tbody").append($("<tr>").append(`<td>${firstName}<td>${lastName}`, $("<td>(x)</td>").css("background", "orange").click(function() {
+                    $(this).closest("tr").remove() })));
+            }
+        }
+
+        function createForm() {
+            $("table").before('<input type="text"/><input type="text"/><select><option value="before">Before</option><option value="after">After</option><input type="submit">');
+            $("input").css({"border": "none", "border": "2px solid #e0e2e4"});
+            $("select").css({"border": "none", "border": "2px solid #e0e2e4", "border-radius": "5px", "font-weight": "bold"});
+            $("input:submit").css({"border-radius": "5px", "border-color": "#e0e2e4", "background-color": "white", "font-weight": "bold"});
+            $("input:submit").click(function() {
+                let firstN = $("input").first().val();
+                let lastN = $("input:nth-of-type(2)").val();
+                addNewMember(firstN, lastN, ($("select").val()));
+            })
+        }
+        createFamilyTree();
+        createForm();
+    </script>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

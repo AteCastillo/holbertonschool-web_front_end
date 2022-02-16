@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="application/javascript">
+        function createFamilyTree() {
+
+            $("body").append("<table>");
+            $("body").append("<thead>");
+            $("body").append("<tbody>");
+            $("thead").append("<tr>");
+            $("thead tr").append($("<th>").text("Firstname"), $("<th>").text("Lastname"));
+            $("tbody").append($("<tr>").append($("<td>").text("Guillaume")), $("<tr>").append($("<td>").text("Paulette")), $("<tr>").append($("<td>").text("Antoine")));
+            $("tbody tr").append($("<td>").text("Salva"));
+        }
+        createFamilyTree();
+    </script>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
