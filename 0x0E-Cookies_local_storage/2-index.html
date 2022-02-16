@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 2</title>
+    </head>
+    <body>
+        <h1>Login to the website</h1>
+        <input type="text" id="firstname" placeholder="Firstname">
+        <input type="email" id="email" placeholder="Email">
+        <button id="login">Log me in</button>
+        <h1>Cookies</h1>
+        <button id="show">Show the cookies</button>
+        <script>
+            function setCookies() {
+                let date = new Date();
+                date.setTime(date.getTime() + (10 * 24 * 60 * 60 * 1000));
+                const expires = "expires=" + date.toUTCString();
+                document.cookie = "firstname=" + document.getElementById('firstname').value;
+                document.cookie = "email=" + document.getElementById('email').value;
+                document.cookie = expires;
+            }
+
+            function showCookies() {
+                let paragraph = document.createElement("p");
+                paragraph.innerHTML = "Email: " + getCookie('email') + " - Firstname: " + getCookie('firstname');
+                document.body.append(paragraph);
+            }
+
+            function getCookie(name) {
+                let cookieArray = document.cookie.split('; ');
+                for (let i = 0; i < cookieArray.length; i++) {
+                    let cookiePair = cookieArray[i].split("=");
+                    if (name === cookiePair[0].trim())
+                        return decodeURIComponent(cookiePair[1]);
+                }
+                return "";
+            }
+            document.getElementById("login").onclick = setCookies;
+            document.getElementById("show").onclick = showCookies;
+        </script>
+
+    
+
+    
+
+    </body>
+    
+</html
